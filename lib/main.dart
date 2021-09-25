@@ -8,7 +8,7 @@ import 'package:dani_miniproject/screens/5_homescreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/',
+    initialRoute: '/welcome',
 
     routes: {
       '/': (context) => Loading(),
