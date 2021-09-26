@@ -57,7 +57,9 @@ class Welcome extends StatelessWidget {
                       buttonTemplate(
                         buttonType: 'ElevatedButton',
                         text: 'Login', 
-                        press: () {},
+                        press: () {
+                          Navigator.pushNamed(context, '/login');
+                        },
                         sized_width: 0.6,
                         bg_color: kMain60, 
                         textColor: kSecondary30,
@@ -66,7 +68,9 @@ class Welcome extends StatelessWidget {
                       buttonTemplate(
                         buttonType: 'OutlinedButton',
                         text: 'Sign Up', 
-                        press: () {},
+                        press: () {
+                          Navigator.pushNamed(context, '/signup');
+                        },
                         sized_width: 0.6,
                         bg_color: Colors.transparent, 
                         textColor: kMain60,

@@ -14,7 +14,7 @@ class _LoadingState extends State<Loading> {
   void setupSimulation(){
     Future.delayed(Duration(seconds: 5), () {
       setState(() {
-        Navigator.pushReplacementNamed(context, '/welcome');
+        Navigator.popAndPushNamed(context, '/welcome');
       });
     });
   }
