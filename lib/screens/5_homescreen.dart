@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/shopping-cart');
+              Navigator.pushNamed(context, '/temp');
             },
             icon: Icon(
               Icons.shopping_cart_outlined, 

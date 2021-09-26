@@ -19,7 +19,7 @@ void main() {
       '/login': (context) => Login(), 
       '/signup': (context) => Signup(), 
       '/home': (context) =>  Home(),
-      '/shopping-cart': (context) => ShoppingCart(),
+      '/temp': (context) => TempScreen2(),
     },
     builder: EasyLoading.init(),
 

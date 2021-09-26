@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart'; 
 import 'package:dani_miniproject/constants.dart';
 
-class ShoppingCart extends StatefulWidget {
-  const ShoppingCart({ Key? key }) : super(key: key);
+class TempScreen2 extends StatefulWidget {
+  const TempScreen2({ Key? key }) : super(key: key);
 
   @override
-  _ShoppingCartState createState() => _ShoppingCartState();
+  _TempScreen2State createState() => _TempScreen2State();
 }
 
-class _ShoppingCartState extends State<ShoppingCart> {
+class _TempScreen2State extends State<TempScreen2> {
 
   @override
   Widget build(BuildContext context) {
