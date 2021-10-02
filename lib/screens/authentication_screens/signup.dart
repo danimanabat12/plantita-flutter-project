@@ -22,7 +22,7 @@ class _SignupState extends State<Signup> {
     final formKey = GlobalKey<FormState>();
     
     bool loading = false;
-    String name = '';
+    String username = '';
     String email = ''; 
     String password = '';
 
@@ -83,7 +83,7 @@ class _SignupState extends State<Signup> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Name', 
+                                    'Username', 
                                     style: TextStyle(
                                       fontFamily: 'Roboto Light',
                                       fontSize: 14.0,
@@ -93,13 +93,15 @@ class _SignupState extends State<Signup> {
                                   SizedBox(height: 5.0),
                                   CustomInputField(
                                     type: 1,
-                                    hintText: 'ex. Juan dela Cruz',
+                                    hintText: 'ex. jdelacruz420',
                                     icon: Icon(Icons.person, color: kSecondary30, size: 16.0,),
                                     toValidate: [
                                       RequiredValidator(errorText: "Required *"),
+                                      MinLengthValidator(5, errorText: "should contain atleast 5 characters"),
+                                      MaxLengthValidator(16, errorText: "should contain no more than 16 characters")
                                     ],
                                     onChanged: (value) {
-                                      name = value;
+                                      username = value;
                                     }
                                   ),
                                 ],
@@ -175,7 +177,7 @@ class _SignupState extends State<Signup> {
                                   setState(() {
                                     loading = true;
                                   });
-                                  dynamic result = await _auth.registerWithEmailAndPassword(email, password, name);
+                                  dynamic result = await _auth.registerWithEmailAndPassword(email, password, username);
 
                                   setState(() {
                                     loading = false;
