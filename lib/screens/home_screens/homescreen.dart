@@ -1,10 +1,9 @@
-import 'package:dani_miniproject/screens/5.2_tempscreen.dart';
+import 'package:dani_miniproject/screens/home_screens/profile.dart';
+import 'package:dani_miniproject/screens/home_screens/tempscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:dani_miniproject/constants.dart';
-import 'package:dani_miniproject/components/dashboard.dart';
-import 'package:dani_miniproject/components/plant_widget.dart';
-import 'package:dani_miniproject/screens/5.1_homeoption.dart';
-import 'package:dani_miniproject/screens/5.2_tempscreen.dart';
+import 'package:dani_miniproject/screens/home_screens/home_options.dart';
+
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
 
@@ -19,14 +18,15 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    data = ModalRoute.of(context)!.settings.arguments as Map;
+    // data = ModalRoute.of(context)!.settings.arguments as Map;
     
     const TextStyle navStyle = TextStyle(fontSize: 16.0, fontFamily: 'Roboto Light');
 
     List<Widget> _widgetOptions = <Widget>[
-      HomeOption(user: data['username']),
+      // HomeOption(user: data['username']),
+      HomeOption(user: 'Dani'),
       TempScreen(),
-      TempScreen(),
+      Profile(),
     ];
 
     void _onItemTapped(int index) {

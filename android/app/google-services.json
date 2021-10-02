@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218700985347",
+    "project_id": "plantita-mobile-app",
+    "storage_bucket": "plantita-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218700985347:android:870b46edb5db1daf32ca36",
+        "android_client_info": {
+          "package_name": "com.dani_manabat.dani_miniproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218700985347-1kiqjuelec6fnrt2g0ed42qoemfugah1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-kCMp5VhgTYU-5mLC8-Z6YiZPv_2RjVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218700985347-1kiqjuelec6fnrt2g0ed42qoemfugah1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

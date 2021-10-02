@@ -38,7 +38,7 @@ class HomeOption extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            'Hello, ',
+                            'Hello!',
                             style: TextStyle(
                               fontFamily: 'Roboto Regular', 
                               fontSize: 35.0, 
